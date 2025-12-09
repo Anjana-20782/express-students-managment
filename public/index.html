@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Student Management</h1>
+
+    <!-- Form to add / edit student -->
+    <section id="form-section">
+      <h2 id="form-title">Add Student</h2>
+      <form id="student-form">
+        <input type="hidden" id="student-id" />
+        <div>
+          <label>Name</label>
+          <input id="name" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div>
+          <label>Roll Number</label>
+          <input id="rollNumber" required />
+        </div>
+        <fieldset>
+          <legend>Marks</legend>
+          <div>
+            <label>Subject 1</label>
+            <input id="subject1" type="number" min="0" max="100" value="0" required />
+          </div>
+          <div>
+            <label>Subject 2</label>
+            <input id="subject2" type="number" min="0" max="100" value="0" required />
+          </div>
+          <div>
+            <label>Subject 3</label>
+            <input id="subject3" type="number" min="0" max="100" value="0" required />
+          </div>
+        </fieldset>
+        <button type="submit" id="save-btn">Save</button>
+        <button type="button" id="cancel-btn" style="display:none">Cancel</button>
+      </form>
+    </section>
+
+    <!-- Student list -->
+    <section>
+      <h2>All Students</h2>
+      <div id="students-list">
+        <!-- populated by JS -->
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
