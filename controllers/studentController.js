@@ -1,5 +1,5 @@
 // controllers/studentController.js
-import Student from './models/Student.js';
+import Student from '../models/Student.js';
 
 // GET /api/students
 export const getAllStudents = async (req, res) => {

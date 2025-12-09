@@ -7,7 +7,7 @@ const MarksSchema = new Schema({
   subject1: { type: Number, required: true, default: 0 },
   subject2: { type: Number, required: true, default: 0 },
   subject3: { type: Number, required: true, default: 0 }
-}, { _id: false }); // no separate _id for marks subdocument
+}, { _id: false });
 
 const StudentSchema = new Schema({
   name: { type: String, required: true, trim: true },
