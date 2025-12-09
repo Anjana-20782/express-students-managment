@@ -1,12 +1,95 @@
-/* public/style.css */
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 0; padding: 16px; background:#f6f8fa; color:#111; }
-.container { max-width: 900px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
-h1,h2 { margin: 0 0 12px 0; }
-form > div, fieldset > div { margin-bottom: 8px; }
-input { padding: 8px; border:1px solid #ddd; border-radius:4px; width:100%; box-sizing:border-box; }
-.student-card { padding: 12px; border: 1px solid #e6e6e6; margin-bottom: 8px; border-radius:6px; background:#fff; }
-.student-card .actions { margin-top:8px; }
-button { padding: 8px 12px; border: none; border-radius:6px; cursor:pointer; }
-button.edit-btn { background: #0366d6; color: #fff; margin-right:8px; }
-button.delete-btn { background: #d73a49; color: #fff; }
-#save-btn { background: #2ea44f; color: #fff; }
+/* Global styles */
+body { 
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0; 
+  padding: 30px; 
+  background:#f6f8fa; 
+  color:#111; 
+}
+
+/* Container box */
+.container { 
+  max-width: 900px; 
+  margin: 0 auto; 
+  background: #fff; 
+  padding: 30px; 
+  border-radius: 12px; 
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06); 
+}
+
+/* Titles */
+h1 { 
+  margin-bottom: 24px; 
+  font-size: 34px; 
+  font-weight: 700;
+  text-align: center;
+}
+h2 { 
+  margin: 24px 0 16px 0; 
+  font-size: 20px; 
+  font-weight: 800;
+}
+
+/* Input spacing */
+form > div, 
+fieldset > div { 
+  margin-bottom: 17px; 
+}
+
+input { 
+  padding: 10px; 
+  border:1px solid #ddd; 
+  border-radius:6px; 
+  width:100%; 
+  box-sizing:border-box; 
+  font-size:16px;
+}
+
+/* Fieldset */
+fieldset { 
+  padding: 20px; 
+  border-radius: 8px; 
+  margin-top: 20px;
+}
+legend {
+  padding: 0 8px;
+  font-weight: 600;
+}
+
+/* Buttons */
+button { 
+  padding: 10px 16px; 
+  border: none; 
+  border-radius:8px; 
+  cursor:pointer; 
+  font-size:15px;
+}
+
+#save-btn { 
+  background: #2ea44f; 
+  color: #fff; 
+  margin-top: 10px;
+}
+
+button.edit-btn { 
+  background: #0366d6; 
+  color: #fff; 
+  margin-right:8px; 
+}
+
+button.delete-btn { 
+  background: #d73a49; 
+  color: #fff; 
+}
+
+/* Student card */
+.student-card { 
+  padding: 16px; 
+  border: 1px solid #e6e6e6; 
+  margin-bottom: 12px; 
+  border-radius:8px; 
+  background:#fff; 
+}
+.student-card .actions { 
+  margin-top:12px; 
+}
