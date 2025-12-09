@@ -1,0 +1,12 @@
+/* public/style.css */
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 0; padding: 16px; background:#f6f8fa; color:#111; }
+.container { max-width: 900px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+h1,h2 { margin: 0 0 12px 0; }
+form > div, fieldset > div { margin-bottom: 8px; }
+input { padding: 8px; border:1px solid #ddd; border-radius:4px; width:100%; box-sizing:border-box; }
+.student-card { padding: 12px; border: 1px solid #e6e6e6; margin-bottom: 8px; border-radius:6px; background:#fff; }
+.student-card .actions { margin-top:8px; }
+button { padding: 8px 12px; border: none; border-radius:6px; cursor:pointer; }
+button.edit-btn { background: #0366d6; color: #fff; margin-right:8px; }
+button.delete-btn { background: #d73a49; color: #fff; }
+#save-btn { background: #2ea44f; color: #fff; }
