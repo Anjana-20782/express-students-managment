@@ -1,4 +1,5 @@
-// models/Student.js
+// models/Student.js//add cheyunthinte structure psranj kodukan
+
 import mongoose from 'mongoose';
 
 const { Schema, model } = mongoose;

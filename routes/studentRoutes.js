@@ -9,8 +9,8 @@ import {
 
 const router = express.Router();
 
-router.get('/', getAllStudents);
-router.get('/:id', getStudentById);
+router.get('/', getAllStudents);    //api creation verum / vilichal display cheypikande paranj koduthirikanne route                                    
+router.get('/:id', getStudentById);  //frondend eppo call cheyum backendil eppo work cheyanam paranj kodutirika
 router.post('/', createStudent);
 router.put('/:id', updateStudent);
 router.delete('/:id', deleteStudent);

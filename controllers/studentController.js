@@ -1,4 +1,6 @@
-// controllers/studentController.js
+// controllers/studentController.js. //frontend call cheythal backend ezhuthi vekkande aa ezhuthi vekunna controllers ayirikum avide enth cheynam paranj kodukanne
+//edit annel edit work avanam angane
+
 import Student from '../models/Student.js';
 
 // GET /api/students
@@ -40,7 +42,7 @@ export const createStudent = async (req, res) => {
     }
 
     const student = new Student({ name, email, rollNumber, marks });
-    await student.save();
+    await student.save();//mongoosein ullile oru mongodb query ann 
     res.status(201).json(student);
   } catch (err) {
     console.error('createStudent error:', err);
@@ -66,7 +68,7 @@ export const updateStudent = async (req, res) => {
 export const deleteStudent = async (req, res) => {
   try {
     const { id } = req.params;
-    const student = await Student.findByIdAndDelete(id);
+    const student = await Student.findByIdAndDelete(id);//mongoose queryss
     if (!student) return res.status(404).json({ message: 'Student not found' });
     res.json({ message: 'Student deleted' });
   } catch (err) {
